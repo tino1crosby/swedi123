@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Purchase System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Purchase Articles</h1>
+        <form id="purchaseForm" method="POST" action="process_payment.php">
+            <label for="article">Select Article:</label>
+            <select id="article" name="article" required>
+                <option value="article1">Article 1 - $10</option>
+                <option value="article2">Article 2 - $15</option>
+                <option value="article3">Article 3 - $20</option>
+            </select>
+            <br>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            <br>
+            <button type="submit">Purchase</button>
+        </form>
+        <div id="errorMessage" class="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Submission System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Author Submission Guidelines</h1>
+        <p>Please follow the guidelines below before submitting your work:</p>
+        <ul>
+            <li>Submissions must be original and unpublished.</li>
+            <li>Maximum word count: 5000 words.</li>
+            <li>Format: .docx or .pdf.</li>
+        </ul>
+        <h2>Submit Your Work</h2>
+        <form id="submissionForm" enctype="multipart/form-data">
+            <label for="authorName">Author Name:</label>
+            <input type="text" id="authorName" name="authorName" required>
+            <label for="authorEmail">Email:</label>
+            <input type="email" id="authorEmail" name="authorEmail" required>
+            <label for="submissionFile">Upload File:</label>
+            <input type="file" id="submissionFile" name="submissionFile" accept=".docx,.pdf" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
